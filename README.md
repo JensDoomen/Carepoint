@@ -1,1 +1,1 @@
-# Care-point
+# Carepoint

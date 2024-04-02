@@ -7,9 +7,17 @@
     Shell.FlyoutBehavior="Disabled"
     Title="Stethoscope">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{OnPlatform 'notes.png', iOS='notes.png', MacCatalyst='notes.png'}" />
+
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="{OnPlatform 'about.png', iOS='about.png', MacCatalyst='about.png'}" />
+    </TabBar>
+    
 
 </Shell>

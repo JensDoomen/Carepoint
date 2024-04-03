@@ -14,10 +14,15 @@
             Icon="{OnPlatform 'notes.png', iOS='notes.png', MacCatalyst='notes.png'}" />
 
         <ShellContent
-            Title="About"
-            ContentTemplate="{DataTemplate local:AboutPage}"
+            Title="Heart measurement"
+            ContentTemplate="{DataTemplate local:HeartScanPage}"
             Icon="{OnPlatform 'about.png', iOS='about.png', MacCatalyst='about.png'}" />
+
+        <ShellContent
+            Title="Lung measurement"
+            ContentTemplate="{DataTemplate local:LungScanPage}"
+            Icon="{OnPlatform 'about.png', iOS='about.png', MacCatalyst='about.png'}" />        
+
     </TabBar>
-    
 
 </Shell>

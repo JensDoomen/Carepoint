@@ -68,7 +68,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AboutPage.xaml">
+	  <Compile Update="HeartScanPage.xaml.cs">
+	    <DependentUpon>HeartScanPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="HeartScanPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="LungScanPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

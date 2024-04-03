@@ -1,4 +1,6 @@
-﻿namespace Stethoscope
+﻿using System;
+using Microsoft.Maui.Controls;
+namespace Stethoscope
 {
     public partial class MainPage : ContentPage
     {
@@ -20,6 +22,7 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
     }
 
 }

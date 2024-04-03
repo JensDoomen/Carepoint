@@ -1,11 +1,11 @@
 namespace Stethoscope;
 
-public partial class AboutPage : ContentPage
+public partial class HeartScanPage : ContentPage
 {
-    public AboutPage()
-    {
+	public HeartScanPage()
+	{
         InitializeComponent();
-    }
+	}
 
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {

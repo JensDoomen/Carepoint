@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stethoscope.AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        
+
+        <Label FontSize="22" FontAttributes="Bold" Text="Stethoscope" VerticalOptions="End"/>
+    
+        <HorizontalStackLayout Spacing="10">
+            <Label FontSize="22" Text="App Version 1.0" VerticalOptions="End" />
+            <Label FontSize="22" Text="|" VerticalOptions="End" />
+            <Label FontSize="22" Text="SDK Version 1.0" VerticalOptions="End" />
+        </HorizontalStackLayout>
+
+        <Label FontSize="19" Text="Our company, located in Ede, The Netherlands, has a mission to make social an technological innovations available for healthcare. Both for professionals and patients as well. We consider that as crucial to keep healthcare qualitative, accessible and affordable. Our core values are transparancy, intergrity and human first." />
+        <Label FontSize="20" FontAttributes="Bold" Text="For more information on Stethoscope visit us at:"/>
+    </VerticalStackLayout>
+</ContentPage>

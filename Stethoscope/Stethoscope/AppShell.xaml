@@ -4,12 +4,61 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Stethoscope"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Stethoscope">
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader>
+        <Image Source="dotnet_bot.png" WidthRequest="100"></Image>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Label Text="Trademark" HorizontalTextAlignment="Center"></Label>
+    </Shell.FlyoutFooter>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions=".30*, .70*" RowDefinitions="*,*,*" RowSpacing="10" ColumnSpacing="10">
+                <HorizontalStackLayout Grid.Row="0" Spacing="10">
+                    <Image Source="{Binding FlyoutIcon}" WidthRequest="50" HeightRequest="50"></Image>
+                    <Label Text="{Binding Title}" HorizontalTextAlignment="Center"></Label>
+                </HorizontalStackLayout>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Home" FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Title="View profile"
+        ContentTemplate="{DataTemplate local:ViewProfilePage}"
+        Route="ViewProfilePage"
+        Icon="{OnPlatform 'about.png', iOS='about.png', MacCatalyst='about.png'}" />
+
+        <ShellContent
+        Title="Healt History"
+        ContentTemplate="{DataTemplate local:HistoryPage}"
+        Route="HistoryPage"/>
+        
+        <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Mainpage"/>
+        
+        <ShellContent
+        Title="About the App"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage"/>
+        
+        <ShellContent
+         Title="Log Out"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="Mainpage"/>
+        
+    </FlyoutItem>
+
 
     <TabBar>
         <ShellContent
-            Title="Notes"
+            Title="Healt History"
             ContentTemplate="{DataTemplate local:MainPage}"
             Icon="{OnPlatform 'notes.png', iOS='notes.png', MacCatalyst='notes.png'}" />
 

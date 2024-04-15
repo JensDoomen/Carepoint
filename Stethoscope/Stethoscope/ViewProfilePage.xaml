@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stethoscope.ViewProfilePage"
+             Title="Profile">
+    <VerticalStackLayout>
+        <Label 
+            Text="Name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Email"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"/>
+
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(First name)" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(Last Name)" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(Birthday)" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(Gender)" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(Weight)" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Entry Placeholder="(Height)" />
+        </StackLayout>
+    </VerticalStackLayout>
+
+    
+        
+    
+</ContentPage>
